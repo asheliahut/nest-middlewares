@@ -1,14 +1,15 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
+import { XFrameOptionsOptions } from 'helmet/dist/types/middlewares/x-frame-options';
 
 @Injectable()
 export class HelmetFrameguardMiddleware implements NestMiddleware {
 
-    public static configure(opts: helmet.IHelmetFrameguardConfiguration) {
+    public static configure(opts: XFrameOptionsOptions) {
         this.options = opts;
     }
 
-    private static options: helmet.IHelmetFrameguardConfiguration;
+    private static options: XFrameOptionsOptions;
 
     public use(req: any, res: any, next: any) {
         if (HelmetFrameguardMiddleware.options) {

@@ -2,26 +2,26 @@ import { expect } from 'chai';
 import * as proxyquire from 'proxyquire';
 import { stub } from 'sinon';
 
-import { ConnectRidMiddleware } from './index';
+import { ExpressRequestIdMiddleware } from './index';
 
-describe('ConnectRidMiddleware', () => {
+describe('ExpressRequestIdMiddleware', () => {
     const mockRequest = {};
     const mockResponse = {};
-    let middleware: ConnectRidMiddleware;
-    let ProxiedConnectRidMiddleware;
-    let ridStub: sinon.SinonStub;
+    let middleware: ExpressRequestIdMiddleware;
+    let ProxiedExpressRequestIdMiddleware;
+    let expressRequestIdStub: sinon.SinonStub;
     beforeEach(() => {
-        ridStub = stub();
-        ProxiedConnectRidMiddleware = proxyquire('./index', {
-            'connect-rid': ridStub,
-        }).ConnectRidMiddleware;
+        expressRequestIdStub = stub();
+        ProxiedExpressRequestIdMiddleware = proxyquire('./index', {
+            'express-request-id': expressRequestIdStub,
+        }).ExpressRequestIdMiddleware;
     });
 
     describe('properly configured', () => {
         beforeEach(() => {
-            ridStub.returns(stub());
-            ProxiedConnectRidMiddleware.configure({});
-            middleware = new ProxiedConnectRidMiddleware();
+            expressRequestIdStub.returns(stub());
+            ProxiedExpressRequestIdMiddleware.configure({});
+            middleware = new ProxiedExpressRequestIdMiddleware();
         });
 
         it('should be defined', () => {
@@ -34,22 +34,22 @@ describe('ConnectRidMiddleware', () => {
 
         it('should call middleware from calling use', () => {
             middleware.use(mockRequest, mockResponse, stub());
-            expect(ridStub.called).to.be.true;
+            expect(expressRequestIdStub.called).to.be.true;
         });
         afterEach(() => {
-            ProxiedConnectRidMiddleware.configure(undefined);
+            ProxiedExpressRequestIdMiddleware.configure(undefined);
         });
     });
 
     describe('not configured', () => {
         beforeEach(() => {
-            ridStub.returns(stub());
-            middleware = new ProxiedConnectRidMiddleware();
+            expressRequestIdStub.returns(stub());
+            middleware = new ProxiedExpressRequestIdMiddleware();
         });
 
         it('should call middleware from calling use', () => {
             middleware.use(mockRequest, mockResponse, stub());
-            expect(ridStub.called).to.be.true;
+            expect(expressRequestIdStub.called).to.be.true;
         });
     });
 });

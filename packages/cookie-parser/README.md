@@ -1,21 +1,21 @@
 # Nest Middlewares - Cookie Parser
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [cookie-parser](http://www.npmjs.com/package/cookie-parser).
 
 ## Installation
 
-`@nest-middlewares/cookie-parser` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/cookie-parser` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/cookie-parser
+npm install --save @nest-middleware-collection/cookie-parser
 ```
 
 ## Usage
 
 ```ts
-import { CookieParserMiddleware } from '@nest-middlewares/cookie-parser';
+import { CookieParserMiddleware } from '@nest-middleware-collection/cookie-parser';
 
 @Module(...)
 export class MyModule {

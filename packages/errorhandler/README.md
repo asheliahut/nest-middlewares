@@ -1,21 +1,21 @@
 # Nest Middlewares - Error Handler
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [errorhandler](http://www.npmjs.com/package/errorhandler).
 
 ## Installation
 
-`@nest-middlewares/errorhandler` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/errorhandler` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/errorhandler
+npm install --save @nest-middleware-collection/errorhandler
 ```
 
 ## Usage
 
 ```ts
-import { ErrorHandlerMiddleware } from '@nest-middlewares/errorhandler';
+import { ErrorHandlerMiddleware } from '@nest-middleware-collection/errorhandler';
 
 @Module(...)
 export class MyModule {

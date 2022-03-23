@@ -1,11 +1,11 @@
 {
-  "name": "@nest-middlewares/response-time",
-  "version": "6.0.0",
+  "name": "@nest-middleware-collection/response-time",
+  "version": "8.0.0",
   "description": "NestJS Middleware for Response Time",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbhob/nest-middlewares.git"
+    "url": "git+https://github.com/asheliahut/nest-middlewares.git"
   },
   "keywords": [
     "nest",
@@ -13,22 +13,22 @@
     "express",
     "node"
   ],
-  "author": "Wilson Hobbs <wilsonhobbs1@gmail.com>",
+  "contributors": ["Wilson Hobbs <wilsonhobbs1@gmail.com>","Ashley Hutson <asheliahut@gmail.com>"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "private": false,
   "bugs": {
-    "url": "https://github.com/wbhob/nest-middlewares/issues"
+    "url": "https://github.com/asheliahut/nest-middlewares/issues"
   },
-  "homepage": "https://github.com/wbhob/nest-middlewares#readme",
+  "homepage": "https://github.com/asheliahut/nest-middlewares#readme",
   "peerDependencies": {
-    "@nestjs/common": "^7.0.0"
+    "@nestjs/common": "^8.0.0"
   },
   "dependencies": {
-    "@types/express": "^4.16.0",
-    "@types/express-serve-static-core": "^4.16.0",
+    "@types/express": "^4.17.13",
+    "@types/express-serve-static-core": "^4.17.28",
     "@types/response-time": "^2.3.2",
     "response-time": "^2.3.2"
   }

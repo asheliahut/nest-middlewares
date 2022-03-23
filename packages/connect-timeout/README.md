@@ -1,21 +1,21 @@
 # Nest Middlewares - Connect Timeout
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [connect-timeout](http://www.npmjs.com/package/connect-timeout).
 
 ## Installation
 
-`@nest-middlewares/connect-timeout` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/connect-timeout` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/connect-timeout
+npm install --save @nest-middleware-collection/connect-timeout
 ```
 
 ## Usage
 
 ```ts
-import { ConnectTimeoutMiddleware } from '@nest-middlewares/connect-timeout';
+import { ConnectTimeoutMiddleware } from '@nest-middleware-collection/connect-timeout';
 
 @Module(...)
 export class MyModule {

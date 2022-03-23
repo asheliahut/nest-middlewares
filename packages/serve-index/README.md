@@ -1,21 +1,21 @@
 # Nest Middlewares - Serve Index
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [serve-index](http://www.npmjs.com/package/serve-index).
 
 ## Installation
 
-`@nest-middlewares/serve-index` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/serve-index` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/serve-index
+npm install --save @nest-middleware-collection/serve-index
 ```
 
 ## Usage
 
 ```ts
-import { ServeIndexMiddleware } from '@nest-middlewares/serve-index';
+import { ServeIndexMiddleware } from '@nest-middleware-collection/serve-index';
 
 @Module(...)
 export class MyModule {

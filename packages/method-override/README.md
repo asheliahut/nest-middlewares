@@ -1,21 +1,21 @@
 # Nest Middlewares - Method Override
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [method-override](http://www.npmjs.com/package/method-override).
 
 ## Installation
 
-`@nest-middlewares/method-override` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/method-override` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/method-override
+npm install --save @nest-middleware-collection/method-override
 ```
 
 ## Usage
 
 ```ts
-import { MethodOverrideMiddleware } from '@nest-middlewares/method-override';
+import { MethodOverrideMiddleware } from '@nest-middleware-collection/method-override';
 
 @Module(...)
 export class MyModule {

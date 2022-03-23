@@ -1,20 +1,21 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import * as morgan from 'morgan';
+import morgan, { Options as MorganOptions, FormatFn as MorganFormatFn, TokenCallbackFn as MorganTokenCallbackFn, Morgan } from 'morgan';
+import { IncomingMessage, ServerResponse } from 'http';
 
 @Injectable()
 export class MorganMiddleware implements NestMiddleware {
 
-    public static configure(format: string | morgan.FormatFn, opts?: morgan.Options) {
+    public static configure(format: string | MorganFormatFn, opts?: MorganOptions<IncomingMessage, ServerResponse>) {
         this.format = format;
         this.options = opts;
     }
 
-    public static token(name: string, callback: morgan.TokenCallbackFn): morgan.Morgan {
+    public static token(name: string, callback: MorganTokenCallbackFn): Morgan<IncomingMessage, ServerResponse> {
         return morgan.token(name, callback);
     }
 
-    private static options: morgan.Options;
-    private static format: string | morgan.FormatFn;
+    private static options: MorganOptions<IncomingMessage, ServerResponse>;
+    private static format: string | MorganFormatFn;
 
     public use(req: any, res: any, next: any) {
         if (MorganMiddleware.format) {

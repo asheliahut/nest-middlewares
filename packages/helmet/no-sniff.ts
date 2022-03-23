@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
 
 @Injectable()
 export class HelmetNoSniffMiddleware implements NestMiddleware {

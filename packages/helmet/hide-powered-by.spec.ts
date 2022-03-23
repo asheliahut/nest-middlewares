@@ -12,7 +12,7 @@ describe('HelmetHidePoweredByMiddleware', () => {
     beforeEach(() => {
         helmetHidePoweredStub = stub();
         ProxiedHelmetHidePoweredByMiddleware = proxyquire('./hide-powered-by', {
-            helmet: { hidePoweredBy: helmetHidePoweredStub },
+            helmet: {},
         }).HelmetHidePoweredByMiddleware;
     });
     describe('middleware configured', () => {

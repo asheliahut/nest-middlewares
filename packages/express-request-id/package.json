@@ -1,7 +1,7 @@
 {
-  "name": "@nest-middleware-collection/passport",
+  "name": "@nest-middleware-collection/express-request-id",
   "version": "8.0.0",
-  "description": "NestJS Middleware for Passport",
+  "description": "NestJS Middleware for Express Request ID",
   "main": "index",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "keywords": [
     "nest",
     "middlewares",
-    "passport",
+    "express",
     "node"
   ],
   "contributors": ["Wilson Hobbs <wilsonhobbs1@gmail.com>","Ashley Hutson <asheliahut@gmail.com>"],
@@ -27,7 +27,9 @@
     "@nestjs/common": "^8.0.0"
   },
   "dependencies": {
-    "@types/passport": "^1.0.7",
-    "passport": "^0.5.2"
+    "@types/express": "^4.17.13",
+    "@types/express-request-id": "^1.4.3",
+    "@types/express-serve-static-core": "^4.17.28",
+    "express-request-id": "^2.0.1"
   }
 }

@@ -1,21 +1,21 @@
 # Nest Middlewares - Express Session
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [express-session](http://www.npmjs.com/package/express-session).
 
 ## Installation
 
-`@nest-middlewares/express-session` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/express-session` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/express-session
+npm install --save @nest-middleware-collection/express-session
 ```
 
 ## Usage
 
 ```ts
-import { ExpressSessionMiddleware } from '@nest-middlewares/express-session';
+import { ExpressSessionMiddleware } from '@nest-middleware-collection/express-session';
 
 @Module(...)
 export class MyModule {

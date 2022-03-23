@@ -1,21 +1,21 @@
 # Nest Middlewares - Helmet
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [helmet](http://www.npmjs.com/package/helmet).
 
 ## Installation
 
-`@nest-middlewares/helmet` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/helmet` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/helmet
+npm install --save @nest-middleware-collection/helmet
 ```
 
 ## Usage
 
 ```ts
-import { HelmetMiddleware } from '@nest-middlewares/helmet';
+import { HelmetMiddleware } from '@nest-middleware-collection/helmet';
 
 @Module(...)
 export class MyModule {
@@ -30,14 +30,17 @@ export class MyModule {
 The following classes are also available for more specialized imports:
 
 - HelmetContentSecurityPolicyMiddleware
+- HelmetCrossOriginEmbedderPolicyMiddleware
+- HelmetCrossOriginOpenerPolicyMiddleware
+- HelmetCrossOriginResourcePolicyMiddleware
 - HelmetDnsPrefetchControlMiddleware
 - HelmetExpectCtMiddleware
 - HelmetFrameguardMiddleware
 - HelmetHidePoweredByMiddleware
-- HelmetHpkpMiddleware
 - HelmetHstsMiddleware
 - HelmetIeNoOpenMiddleware
-- HelmetNoCacheMiddleware
 - HelmetNoSniffMiddleware
+- HelmetOriginAgentClusterMiddleware
+- HelmetPermittedCrossDomainPoliciesMiddleware
 - HelmetReferrerPolicyMiddleware
 - HelmetXssFilterMiddleware

@@ -2,6 +2,7 @@
     "compilerOptions": {
         "declaration": true,
         "module": "commonjs",
+        "esModuleInterop": true,
         "preserveConstEnums": true,
         "baseUrl": ".",
         "experimentalDecorators": true,

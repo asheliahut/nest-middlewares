@@ -1,21 +1,21 @@
 # Nest Middlewares - CSURF
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [csurf](http://www.npmjs.com/package/csurf).
 
 ## Installation
 
-`@nest-middlewares/csurf` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/csurf` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/csurf
+npm install --save @nest-middleware-collection/csurf
 ```
 
 ## Usage
 
 ```ts
-import { CsurfMiddleware } from '@nest-middlewares/csurf';
+import { CsurfMiddleware } from '@nest-middleware-collection/csurf';
 
 @Module(...)
 export class MyModule {

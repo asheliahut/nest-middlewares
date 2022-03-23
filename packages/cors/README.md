@@ -1,21 +1,21 @@
 # Nest Middlewares - CORS
 
-[![Coverage Status](https://coveralls.io/repos/github/wbhob/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/wbhob/nest-middlewares?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
 
 This is the Nest Middleware wrapper around [cors](http://www.npmjs.com/package/cors).
 
 ## Installation
 
-`@nest-middlewares/cors` is available from NPM. You can install it with this command:
+`@nest-middleware-collection/cors` is available from NPM. You can install it with this command:
 
 ```sh
-npm install --save @nest-middlewares/cors
+npm install --save @nest-middleware-collection/cors
 ```
 
 ## Usage
 
 ```ts
-import { CorsMiddleware } from '@nest-middlewares/cors';
+import { CorsMiddleware } from '@nest-middleware-collection/cors';
 
 @Module(...)
 export class MyModule {
