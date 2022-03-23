@@ -1,3 +1,11 @@
+# [8.0.0](https://github.com/asheliahut/nest-middlewares/compare/v8.0.1...v8.0.0) (2022-03-23)
+
+
+
+## [8.0.1](https://github.com/asheliahut/nest-middlewares/compare/v8.0.0...v8.0.1) (2022-03-23)
+
+
+
 # [8.0.0](https://github.com/asheliahut/nest-middlewares/compare/v6.0.0...v8.0.0) (2022-03-23)
 
 
