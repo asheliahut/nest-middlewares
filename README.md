@@ -1,5 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/asheliahut/nest-middlewares/badge.svg?branch=master)](https://coveralls.io/github/asheliahut/nest-middlewares?branch=master)
-# Nest Middlewares
+# Nest Middleware Collection
+
+This repo is a more up to date version of [wbhob's nestjs-middlewares](https://github.com/wbhob/nest-middlewares).
 Add the most common Express middlewares to your Nest app with one line.
 
 ## System Requirements
