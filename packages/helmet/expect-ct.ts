@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import { ExpectCtOptions } from 'helmet/dist/types/middlewares/expect-ct';
 
 @Injectable()

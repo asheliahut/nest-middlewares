@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import responseTime from 'response-time';
+import * as responseTime from 'response-time';
 
 @Injectable()
 export class ResponseTimeMiddleware implements NestMiddleware {

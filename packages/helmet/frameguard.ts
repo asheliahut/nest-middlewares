@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import { XFrameOptionsOptions } from 'helmet/dist/types/middlewares/x-frame-options';
 
 @Injectable()

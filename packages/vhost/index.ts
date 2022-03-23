@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import vhost from 'vhost';
+import * as vhost from 'vhost';
 
 @Injectable()
 export class VhostMiddleware implements NestMiddleware {

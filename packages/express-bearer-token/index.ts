@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import bearerToken from 'express-bearer-token';
+import * as bearerToken from 'express-bearer-token';
 
 @Injectable()
 export class ExpressBearerTokenMiddleware implements NestMiddleware {

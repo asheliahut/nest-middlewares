@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import connectTimeout from 'connect-timeout';
+import * as connectTimeout from 'connect-timeout';
 
 @Injectable()
 export class ConnectTimeoutMiddleware implements NestMiddleware {

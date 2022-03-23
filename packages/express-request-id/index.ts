@@ -1,15 +1,15 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import requestID, { Options as requestIdOptions } from 'express-request-id';
+import * as requestID from 'express-request-id';
 
 @Injectable()
 export class ExpressRequestIdMiddleware implements NestMiddleware {
 
     // DELETE THESE LINES IF MIDDLEWARE DOES NOT TAKE OPTIONS
-    public static configure(opts: requestIdOptions) {
+    public static configure(opts: requestID.Options) {
         this.options = opts;
     }
 
-    private static options: requestIdOptions;
+    private static options: requestID.Options;
 
     public use(req: any, res: any, next: any) {
         if (ExpressRequestIdMiddleware.options) {

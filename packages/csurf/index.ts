@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import csurf from 'csurf';
+import * as csurf from 'csurf';
 import { Request } from 'express';
 
 @Injectable()

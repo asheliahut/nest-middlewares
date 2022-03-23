@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import { CrossOriginOpenerPolicyOptions } from 'helmet/dist/types/middlewares/cross-origin-opener-policy';
 
 @Injectable()

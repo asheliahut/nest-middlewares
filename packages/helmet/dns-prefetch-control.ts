@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import { XDnsPrefetchControlOptions } from 'helmet/dist/types/middlewares/x-dns-prefetch-control';
 
 @Injectable()

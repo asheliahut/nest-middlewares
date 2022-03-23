@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import cookieSession from 'cookie-session/index';
+import * as cookieSession from 'cookie-session/index';
 
 @Injectable()
 export class CookieSessionMiddleware implements NestMiddleware {
