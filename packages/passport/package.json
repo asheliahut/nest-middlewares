@@ -13,7 +13,10 @@
     "passport",
     "node"
   ],
-  "contributors": ["Wilson Hobbs <wilsonhobbs1@gmail.com>","Ashley Hutson <asheliahut@gmail.com>"],
+  "contributors": [
+    "Wilson Hobbs <wilsonhobbs1@gmail.com>",
+    "Ashley Hutson <asheliahut@gmail.com>"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
