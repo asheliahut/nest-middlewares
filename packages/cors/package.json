@@ -29,10 +29,10 @@
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@types/express-serve-static-core": "^4.17.28",
+    "@types/express-serve-static-core": "^4.17.29",
     "cors": "^2.8.5"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0"
+    "@nestjs/common": "^9.0.0"
   }
 }

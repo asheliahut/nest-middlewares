@@ -27,11 +27,11 @@
   },
   "homepage": "https://github.com/asheliahut/nest-middlewares#readme",
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0"
+    "@nestjs/common": "^9.0.0"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
-    "@types/express-serve-static-core": "^4.17.28",
+    "@types/express-serve-static-core": "^4.17.29",
     "@types/vhost": "^3.0.4",
     "vhost": "^3.0.2"
   }
