@@ -1,6 +1,6 @@
 {
   "name": "@nest-middleware-collection/compression",
-  "version": "8.0.1",
+  "version": "9.0.0",
   "description": "NestJS Middleware for Compression",
   "main": "index",
   "repository": {
